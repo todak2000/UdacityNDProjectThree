@@ -253,7 +253,8 @@ jobs:
       # Here's where you will add some code to rollback on failure
       - destroy-environment:
           workflow_id: ${CIRCLE_WORKFLOW_ID:0:7}
-    
+      - revert-migrations:   
+          workflow_id: ${CIRCLE_WORKFLOW_ID:0:7} 
 
   deploy-frontend:
     docker:
@@ -293,7 +294,7 @@ jobs:
       # Here's where you will add some code to rollback on failure
       - destroy-environment:
           workflow_id: ${CIRCLE_WORKFLOW_ID:0:7}
-      - revert-migrations   
+      - revert-migrations:   
           workflow_id: ${CIRCLE_WORKFLOW_ID:0:7}  
                     
   deploy-backend:
@@ -332,6 +333,8 @@ jobs:
       # Here's where you will add some code to rollback on failure  
       - destroy-environment:
           workflow_id: ${CIRCLE_WORKFLOW_ID:0:7}
+      - revert-migrations:   
+          workflow_id: ${CIRCLE_WORKFLOW_ID:0:7} 
 #   smoke-test:
 #     docker:
 #       # Lightweight Docker image 
