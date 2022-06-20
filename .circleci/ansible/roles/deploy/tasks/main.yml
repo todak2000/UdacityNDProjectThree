@@ -10,10 +10,10 @@
         cd /home/ubuntu/
         tar xvzf artifact.tar.gz -C .
   
-  - name: "Installing Node Dependencies"
-  shell: |
-    cd /home/ubuntu
-    npm i
+  - name: Installing Node Dependencies
+    shell: |
+      cd /home/ubuntu
+      npm i
 
   - name: "run server"
     become: true
