@@ -358,6 +358,8 @@ jobs:
       - run:
           name: Deploy backend
           command: |
+            cd backend
+            npm i
             # ls /root
             ls /root/project/backend/
             cat ~/project/.circleci/ansible/inventory.txt
