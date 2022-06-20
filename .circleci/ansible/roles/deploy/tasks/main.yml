@@ -9,12 +9,16 @@
     shell : |
         cd /home/ubuntu/
         tar xvzf artifact.tar.gz -C .
+  
+  - name: "Installing Node Dependencies"
+  shell: |
+    cd /home/ubuntu
+    npm i
 
   - name: "run server"
     become: true
     shell : |
-        cd /home/ubuntu/
-        npm install
+        cd /home/ubuntu/dist
         pm2 stop default
         pm2 start npm -- start
     environment:
