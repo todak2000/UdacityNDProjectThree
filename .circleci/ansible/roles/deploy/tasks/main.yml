@@ -11,7 +11,7 @@
   - name: "move files to server"
     become: yes
     synchronize:
-      src: /root/project/backend/dist
+      src: /root/project/backend
       dest: ./udapeople
       recursive: true
 
