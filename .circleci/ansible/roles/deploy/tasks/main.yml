@@ -4,6 +4,12 @@
     path: ~/backend
     state: directory
 
+- name: Copy files
+  become: true
+  copy:
+    src: /root/project/artifact.tar.gz
+    dest: ~/backend/artifact.tar.gz
+
 - name: "Unarchive backend files"
   unarchive:
     src: artifact.tar.gz
