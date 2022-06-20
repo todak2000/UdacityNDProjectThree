@@ -358,7 +358,9 @@ jobs:
           name: Deploy backend
           command: |
             cd backend
-            # npm install
+            sudo npm cache clean –force
+            rm -rf node_modules
+            sudo npm install
             # npm audit fix --audit-level=critical --force
             npm install typescript
             npm run build
