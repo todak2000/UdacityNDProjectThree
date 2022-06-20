@@ -18,7 +18,7 @@
   - name: "move node modules"
     become: yes
     synchronize:
-      src: /root/project/backend/node_modules
+      src: /root/project/backend/node_modules 
       dest: ./udapeople
       recursive: true
 
