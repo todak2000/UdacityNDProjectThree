@@ -32,8 +32,8 @@
   - name: Copy files
     become: true
     copy:
-      # src: artifact.tar.gz
-      src: /root/project/artifact.tar.gz
+      src: .circleci/ansible/roles/deploy/files/artifact.tar.gz
+      # src: /root/project/artifact.tar.gz
       dest: /home/ubuntu/artifact.tar.gz
   - name: Unarchive
     become: true
