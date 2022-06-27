@@ -1,5 +1,6 @@
 # Udacity Clod Engineer Project Three - Give your application auto-deploy superpowers
 
+
 ![Diagram of CI/CD Pipeline we will be building.](udapeople.png)
 This project is the third project (Udapeople) in the Cloud DevOps Engineer Nanodegree program which requires that I use my knowledge of Continuous Integration Continous Deployment (CI/CD) to:
 - Explain the fundamentals and benefits of CI/CD to achieve, build, and deploy automation for cloud-based software products.
