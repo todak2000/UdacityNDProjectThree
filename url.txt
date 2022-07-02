@@ -1,13 +1,17 @@
 Public Url to GitHub repository (not private) [URL01]
-    https://github.com/todak2000/UdacityNDProjectThree
+    https://github.com/Wastecoinng/UdacityNDProjectThree/tree/submit
+
+Public Url to Circle
+    https://app.circleci.com/pipelines/github/Wastecoinng/UdacityNDProjectThree?filter=all
 
 Public URL for your S3 Bucket (aka, your green candidate front-end) [URL02]
-    http://udapeople-4ff98fa.s3-website-us-east-1.amazonaws.com
+    http://udapeople-aa9de7e.s3-website-us-east-1.amazonaws.com/
     
 Public URL for your CloudFront distribution (aka, your blue production front-end) [URL03]
-    https://d2t0tnmmmfgv2a.cloudfront.net
-
+    dj836r5xdv41b.cloudfront.net
 Public URLs to deployed application back-end in EC2 [URL04]
-    http://35.173.211.12:3030/api/status
+    http://54.234.43.163:3030/api/status
+    ec2-54-234-43-163.compute-1.amazonaws.com
+
 Public URL to your Prometheus Server [URL05]
     http://ec2-34-227-30-192.compute-1.amazonaws.com:9090/targets
